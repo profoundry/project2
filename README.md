@@ -9,6 +9,7 @@ In this project you will be making classes to handle various balls. Using inheri
 * ALL classes will inherit publicly
 * ALL radii should be greater than 0, if 0 is given, set it to 1
 * ALL accessors should be const
+* Use the value PI when you need a value for pi
 
 ##Part 1
 Part 1 will focus on completing the implementation for the Ball class.
@@ -34,9 +35,21 @@ double get_volume() const; // return the volume of the Ball
 virtual std::string get_class() const; // return the name of the class, "Ball"
 virtual std::string get_data() const; // return an empty string for the base class
 ```
-part1.cpp should compile and pass all tests before moving on
+_part1.cpp should compile and pass all tests before moving on_
 
 ##Part 2
+    File: SizeABall.hpp
+    Class Name: SizeABall
+    Derived From: Ball
+    This is a Ball that can have the radius changed after initialization
+
+* Create the class definition, derive from the Ball class publicly
+* Create a default constructor that calls the base class default constructor
+* Create an overloaded constructor that takes a double, set the radius to this parameter
+* Create a set_radius function that take a double, set the radius to the parameter
+* Override the get_class function to return the name of the class
+
+_part1.cpp and part2.cpp should BOTH compile and pass all tests before moving on_
 
 ##Part 3
 
